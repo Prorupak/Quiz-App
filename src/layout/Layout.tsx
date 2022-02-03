@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Content from '../components/main/Content';
 import Header from '../components/shared/Header';
 
 const Grid = styled.div`
@@ -17,9 +18,12 @@ const Navbar = styled.div.attrs({
 `
 
 
-const Content = styled.div.attrs({
-    className: ' bg-gray-100'
+const Main = styled.div.attrs({
+    className: ' bg-white'
 })`
+display: grid;
+place-items: center;
+
   grid-area: row-2-start / 2 / row-end / 3;
   color: #000;
   max-height: 100%;
@@ -36,7 +40,7 @@ const Layout: React.FC<Props> = ({ children, ...rest }) => {
         <>
             <Grid {...rest} >
                 <Navbar> <Header /> </Navbar>
-                <Content>main</Content>
+                <Main><Content /></Main>
             </Grid>
         </>
     )

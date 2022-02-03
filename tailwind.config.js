@@ -13,10 +13,11 @@ module.exports = {
     },
     extend: {
       fontSize: {
-        '1xs': '20px'
+        '1xs': '20px',
+        '1xl': '35px'
       },
       colors: {
-        'nav': '#79B4B7',
+        'nav': '#23837F',
         'indigo-950': '#1b1925',
         'indigo-1000': '#100f17',
         'indigo-1100': '#08070f'
