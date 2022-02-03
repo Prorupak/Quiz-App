@@ -16,12 +16,13 @@ module.exports = {
         '1xs': '20px'
       },
       colors: {
+        'nav': '#79B4B7',
         'indigo-950': '#1b1925',
         'indigo-1000': '#100f17',
         'indigo-1100': '#08070f'
       },
       height: {
-        '60px': '60px',
+        '50px': '50px',
         '20rem': '20rem',
         '25rem': '25rem',
       },
@@ -49,7 +50,7 @@ module.exports = {
         '40rem': '40rem'
       },
       padding: {
-        '6%': '6%',
+        '3%': '3%',
         '60px': '60px',
         '20%': '20%',
         '10%': '10%',
@@ -57,6 +58,9 @@ module.exports = {
       zIndex: {
         '9999': '9999'
       },
+      gap: {
+        '5px': '5px',
+      }
     },
     default: {
       button: {
