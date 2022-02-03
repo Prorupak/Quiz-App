@@ -59,6 +59,7 @@ export const useCountdownTimer = () => {
 
     return {
         time,
+        setTime,
         onClickReset
     }
 }

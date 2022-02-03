@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useCountdownTimer } from '../../hooks/useCountdownTimer';
+import { useTimerContext } from '../../context/TimerContext';
 
 const Wrapper = styled.div`
 min-height: min-content;
@@ -28,7 +28,9 @@ margin: 15px 0;
 }
 `
 const Content = () => {
-    const { onClickReset } = useCountdownTimer()
+
+    const { time, onClickReset } = useTimerContext()
+
     return (
         <>
             <Wrapper>
@@ -36,6 +38,7 @@ const Content = () => {
                     <header className="text-1xs font-bold">Coding Quiz Challenge</header>
                     <p className='text-gray-700'>Try to answer to following code-related questions within the limit.</p>
                     <p className='text-gray-700'>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                    <p className='text-gray-700'>Time:{time}</p>
                     <Button onClick={onClickReset}>Start</Button>
                 </ContentWrapper>
             </Wrapper>

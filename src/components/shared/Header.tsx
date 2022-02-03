@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FaHandPointLeft } from 'react-icons/fa'
 import { BiTimer } from 'react-icons/bi'
 import { useCountdownTimer } from '../../hooks/useCountdownTimer';
+import { useTimerContext } from '../../context/TimerContext';
 
 const Wrapper = styled.div.attrs({
     className: 'h-50px px-3% bg-nav text-indigo-1000 text-center text-xl flex items-center justify-between'
@@ -28,7 +29,7 @@ const Time = styled.div.attrs({
 
 
 const Header = () => {
-    const { time } = useCountdownTimer()
+    const { time } = useTimerContext();
     return (
         <>
             <Wrapper>
