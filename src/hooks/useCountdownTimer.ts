@@ -2,7 +2,7 @@ import React from "react";
 
 export const useCountdownTimer = () => {
     const intervalRef: React.MutableRefObject<any> = React.useRef(null);
-    const [time, setTime] = React.useState<string>('10');
+    const [time, setTime] = React.useState<string>('00');
 
     const timeRemaining = (endTime: string) => {
         const total = Date.parse(endTime) - Date.parse(new Date().toISOString());
@@ -49,7 +49,6 @@ export const useCountdownTimer = () => {
     }
 
     React.useEffect(() => {
-        clearTimer(getDeadline().toISOString());
         return () => {
             if (intervalRef.current) {
                 clearInterval(intervalRef.current);

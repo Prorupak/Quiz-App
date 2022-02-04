@@ -1,0 +1,35 @@
+{
+    "javascriptQns": [
+        {
+            "question": "Which operator returns true if the two compared values are not equal?",
+            "options": [
+                "==",
+                "!=",
+                "===",
+                "!=="
+            ],
+            "answer": "!=="
+        },
+        {
+            "question": " How is a forEach statement different from a for statement?",
+            "options": [
+                "Only a for statement uses a callback function.",
+                "A for statement is generic, but a forEach statement can be used only with an array.",
+                "A forEach statement is generic, but a for statement can be used only with an array.",
+                "Only a forEach statement lets you specify your own iterator."
+            ],
+            "answer": "A for statement is generic, but a forEach statement can be used only with an array."
+        },
+        {
+            "question": "Review the code below. Which statement calls the addTax function and passes 50 as an argument? How would you use this function to find out how much tax should be paid on $50?",
+            "code": "function addTax(total) { /n return total * 1.05;}",
+            "options": [
+                "Only a for statement uses a callback function.",
+                "A for statement is generic, but a forEach statement can be used only with an array.",
+                "A forEach statement is generic, but a for statement can be used only with an array.",
+                "Only a forEach statement lets you specify your own iterator."
+            ],
+            "answer": "A for statement is generic, but a forEach statement can be used only with an array."
+        }
+    ]
+}

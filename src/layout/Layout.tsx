@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Content from '../components/main/Content';
+import QuizPlay from '../components/main/QuizPlay';
 import Header from '../components/shared/Header';
 
 const Grid = styled.div`
@@ -40,7 +41,9 @@ const Layout: React.FC<Props> = ({ children, ...rest }) => {
         <>
             <Grid {...rest} >
                 <Navbar> <Header /> </Navbar>
-                <Main><Content /></Main>
+                <Main>
+                    {children}
+                </Main>
             </Grid>
         </>
     )

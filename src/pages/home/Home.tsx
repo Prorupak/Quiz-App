@@ -1,11 +1,13 @@
 import React from 'react';
+import { Outlet } from 'react-router';
+import Content from '../../components/main/Content';
 import Layout from '../../layout/Layout';
 
 const Home = () => {
   return (
     <>
       <Layout >
-        <p className="text-lg font-bold">Home</p>
+        <Content />
       </Layout>
     </>
   )
